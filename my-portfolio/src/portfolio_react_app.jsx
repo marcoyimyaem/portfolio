@@ -1,8 +1,5 @@
-import GradientText from './component/GradientText'
-import RotatingText from './component/RotatingText'
 export default function PortfolioApp() {
-    const year = new Date().getFullYear();
-    const profile = {
+  const profile = {
     name: "Marc Yim",
     role: "Technical Skills Trainer • Cybersecurity • Full-Stack Development • Software Engineering",
     summary:
@@ -106,57 +103,42 @@ export default function PortfolioApp() {
         <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:42px_42px]" />
         <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(to_bottom,transparent,rgba(255,255,255,0.03),transparent)] bg-[length:100%_4px] opacity-20" />
 
-        <div className="relative z-10 grid min-h-screen ">
+        <div className="relative z-10 grid min-h-screen lg:grid-cols-[1.05fr_0.95fr]">
           <section className="flex flex-col justify-between border-r border-white/10 bg-black/35 backdrop-blur-sm">
             <div className="p-6 md:p-10">
               <div className="mb-6 flex items-center gap-3 text-sm text-cyan-300/90">
                 <div className="h-3 w-3 rounded-full bg-cyan-400 shadow-[0_0_16px_rgba(34,211,238,0.9)]" />
-                <p className="mb-3 text-sm uppercase tracking-[0.35em]  text-fuchsia-300"><GradientText
-  colors={["#10B981","#3B82F6","#10B981"]}
-  animationSpeed={8}
-  showBorder={false}
-  className="custom-class"
->Marc Yim
-</GradientText></p>
-                <span className="tracking-[0.25em] text-white uppercase">portfolio.runtime</span>
+                <span className="tracking-[0.25em] uppercase">portfolio.runtime</span>
               </div>
 
-              
-              <div className="mt-10 text-left max-w-3xl">
-                
+              <div className="rounded-3xl border border-cyan-400/20 bg-black/50 p-5 shadow-[0_0_40px_rgba(34,211,238,0.08)]">
+                <div className="mb-4 flex flex-wrap items-center gap-2 text-xs text-fuchsia-300">
+                  <span className="rounded-full border border-fuchsia-400/30 px-3 py-1">gulp</span>
+                  <span className="rounded-full border border-white/10 px-3 py-1 text-white/70">cmd</span>
+                  <span className="rounded-full border border-white/10 px-3 py-1 text-white/70">PowerShell</span>
+                  <span className="rounded-full border border-white/10 px-3 py-1 text-white/70">terminal</span>
+                </div>
+                <div className="space-y-1 font-mono text-sm md:text-base">
+                  {terminalLines.map((line) => (
+                    <div key={line} className="text-cyan-300">
+                      {line}
+                    </div>
+                  ))}
+                  <div className="mt-2 text-fuchsia-300">Application Available At: /portfolio/marc-yim</div>
+                </div>
+              </div>
+
+              <div className="mt-10 max-w-3xl">
+                <p className="mb-3 text-sm uppercase tracking-[0.35em] text-fuchsia-300">Marc Yim</p>
                 <h1 className="text-4xl font-semibold leading-tight md:text-6xl">
-Cybersecurity +
+                  Cybersecurity +
                   <span className="block bg-gradient-to-r from-fuchsia-400 via-pink-400 to-violet-300 bg-clip-text text-transparent">
                     Full-Stack Portfolio
                   </span>
                 </h1>
                 <p className="mt-5 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
-                  <GradientText
-  colors={["#10B981","#3B82F6","#10B981"]}
-  animationSpeed={2}
-  showBorder={false}
-  className="custom-class"
->{profile.summary} I design learning experiences, build software, and help teams improve security awareness, delivery, and technical capability.
-                </GradientText></p>
-                <div className="mt-4 w-1/2">
-                    <div className="text-xs  uppercase tracking-[0.25em] text-fuchsia-300">Current Focus</div>
-                    <div className="mt-2 text-2xl font-semibold"><RotatingText
-  texts={['Trainer', 'Security Analyst', 'Developer','Gamer']}
-  mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
-  staggerFrom="last"
-  initial={{ y: "100%" }}
-  animate={{ y: 0 }}
-  exit={{ y: "-120%" }}
-  staggerDuration={0.025}
-  splitLevelClassName="overflow-hidden pb-0.5 sm:pb-1 md:pb-1"
-  transition={{ type: "spring", damping: 30, stiffness: 400 }}
-  rotationInterval={2000}
-  splitBy="characters"
-  auto
-  loop
-/><div className="rounded-full text-center border border-cyan-400/30 px-4 py-2 text-sm text-cyan-300">Available for opportunities</div>
-</div>
-                  </div>
+                  {profile.summary} I design learning experiences, build software, and help teams improve security awareness, delivery, and technical capability.
+                </p>
               </div>
 
               <div className="mt-10 grid gap-4 md:grid-cols-2">
@@ -169,7 +151,6 @@ Cybersecurity +
                   </div>
                 ))}
               </div>
-              
             </div>
 
             <div className="border-t border-white/10 p-6 md:p-10">
@@ -188,22 +169,6 @@ Cybersecurity +
                 ))}
               </div>
             </div>
-            <div className=" bg-black/50 p-5 shadow-[0_0_40px_rgba(34,211,238,0.08)]">
-                <div className="mb-4 flex flex-wrap items-center gap-2 text-xs text-fuchsia-300">
-                  <span className="rounded-full border border-fuchsia-400/30 px-3 py-1">gulp</span>
-                  <span className="rounded-full border border-white/10 px-3 py-1 text-white/70">cmd</span>
-                  <span className="rounded-full border border-white/10 px-3 py-1 text-white/70">PowerShell</span>
-                  <span className="rounded-full border border-white/10 px-3 py-1 text-white/70">terminal</span>
-                </div>
-                <div className="space-y-1 text-left font-mono text-sm md:text-base">
-                  {terminalLines.map((line) => (
-                    <div key={line} className="text-cyan-300">
-                      {line}
-                    </div>
-                  ))}
-                  <div className="mt-2 text-fuchsia-300">Application Available At: /portfolio/marc-yim</div>
-                </div>
-              </div>
           </section>
 
           <section className="relative flex items-center justify-center p-6 md:p-10">
@@ -215,10 +180,18 @@ Cybersecurity +
             <div className="absolute right-[26%] top-[61%] h-20 w-20 rotate-[35deg] rounded-xl border border-white/10 bg-violet-200/15" />
             <div className="absolute right-[18%] top-[34%] h-[26rem] w-12 rotate-[35deg] rounded-full bg-black/30 blur-sm" />
 
-            <div className="relative z-10 grid w-full  gap-5">
-              
+            <div className="relative z-10 grid w-full max-w-3xl gap-5">
+              <div className="ml-auto w-full rounded-[2rem] border border-white/10 bg-black/45 p-6 backdrop-blur-md shadow-[0_0_70px_rgba(0,0,0,0.45)]">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div>
+                    <div className="text-xs uppercase tracking-[0.25em] text-fuchsia-300">Current Focus</div>
+                    <div className="mt-2 text-2xl font-semibold">Trainer • Security Analyst • Developer</div>
+                  </div>
+                  <div className="rounded-full border border-cyan-400/30 px-4 py-2 text-sm text-cyan-300">Available for opportunities</div>
+                </div>
+              </div>
 
-              <div className="grid gap-5 ">
+              <div className="grid gap-5 xl:grid-cols-[1fr_1.1fr]">
                 <div className="rounded-[2rem] border border-white/10 bg-black/45 p-6 backdrop-blur-md">
                   <div className="text-xs uppercase tracking-[0.25em] text-fuchsia-300">Skills</div>
                   <div className="mt-4 flex flex-wrap gap-2">
@@ -233,7 +206,7 @@ Cybersecurity +
                   </div>
                 </div>
 
-                <div className="rounded-[2rem] text-left border border-white/10 bg-black/45 p-6 backdrop-blur-md">
+                <div className="rounded-[2rem] border border-white/10 bg-black/45 p-6 backdrop-blur-md">
                   <div className="text-xs uppercase tracking-[0.25em] text-fuchsia-300">Experience</div>
                   <div className="mt-4 space-y-4">
                     {profile.experience.map((item) => (
@@ -248,7 +221,7 @@ Cybersecurity +
                 </div>
               </div>
 
-              <div className="grid gap-5 text-left md:grid-cols-2">
+              <div className="grid gap-5 md:grid-cols-2">
                 <div className="rounded-[2rem] border border-white/10 bg-black/45 p-6 backdrop-blur-md">
                   <div className="text-xs uppercase tracking-[0.25em] text-fuchsia-300">Education</div>
                   <div className="mt-4 text-lg font-medium">{profile.education.degree}</div>
@@ -270,66 +243,8 @@ Cybersecurity +
               </div>
             </div>
           </section>
-          <footer className="mt-16 border-t border-white/10 bg-black/40 backdrop-blur-md">
-      <div className="mx-auto max-w-6xl px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/70">
-        
-        {/* Left: Copyright */}
-        <div>
-          © {year} Marc Yim. All rights reserved.
-        </div>
-
-        {/* Right: Tech Stack */}
-        <div className="flex items-center gap-2 flex-wrap justify-center">
-          <span className="text-white/50">Powered by:</span>
-
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-cyan-400 transition"
-          >
-            GitHub
-          </a>
-
-          <span className="text-white/30">•</span>
-
-          <a
-            href="https://react.dev"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-cyan-400 transition"
-          >
-            React
-          </a>
-
-          <span className="text-white/30">•</span>
-
-          <a
-            href="https://vitejs.dev"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-cyan-400 transition"
-          >
-            Vite
-          </a>
-
-          <span className="text-white/30">•</span>
-
-          <a
-            href="https://openai.com/chatgpt"
-            target="_blank"
-            rel="noreferrer"
-            className="hover:text-cyan-400 transition"
-          >
-            ChatGPT
-          </a>
         </div>
       </div>
-    </footer>
-        </div>
-      </div>
-      
     </div>
-    
   );
 }
