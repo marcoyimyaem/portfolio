@@ -1,18 +1,19 @@
 import GradientText from './component/GradientText'
 import RotatingText from './component/RotatingText'
+import FuzzyText from './component/FuzzyText'
+import FaultyTerminal from './component/FaultyTerminal';
+
 export default function PortfolioApp() {
     const year = new Date().getFullYear();
+    const currentTime = new Date().toLocaleTimeString();
+    const timeCLI = new Date().toISOString();
+    
     const profile = {
     name: "Marc Yim",
     role: "Technical Skills Trainer • Cybersecurity • Full-Stack Development • Software Engineering",
     summary:
       "Technical Skills Trainer with 12+ years of experience across cybersecurity, full-stack web development, and software engineering.",
-    contact: [
-      { label: "Mobile", value: "0930XXXXXXX", href: "tel:0930XXXXXXX" },
-      { label: "Email", value: "tears@protonmail.com", href: "mailto:tears@protonmail.com" },
-      { label: "Facebook", value: "facebook.com/meaymiy", href: "https://facebook.com/meaymiy" },
-      { label: "Messenger", value: "m.me/meaymiy", href: "https://m.me/meaymiy" },
-    ],
+    
     highlights: [
       "12+ years teaching and building across web, software, and security",
       "Hands-on experience in React, .NET, Java, Node.js, Laravel, and Vue",
@@ -27,12 +28,12 @@ export default function PortfolioApp() {
       "ReactJS",
       "VueJS",
       "Node.js",
-      "Java",
+      "Spring",
       "Laravel",
       "CodeIgniter",
       "Mobile App Development",
       "Cloud Technologies",
-      "Web Hosting",
+      "c#",
       "Version Control",
       "PHPUnit",
       ".NET",
@@ -91,12 +92,35 @@ export default function PortfolioApp() {
   };
 
   const terminalLines = [
-    "[17:18:37] Starting 'build'...",
-    "[cyber] initializing portfolio runtime",
-    "[react] mounting neon interface",
-    "[security] threat-intel modules loaded",
-    "[ui] rendering portfolio dashboard",
-    "[done] live on localhost:3000",
+    { type: "cmd", text: "["+currentTime+"] Starting 'build'..." },
+    { type: "cmd", text: "███╗___███╗███████╗ █████╗ ██╗___██╗███╗___███╗██╗██╗___██╗"},
+    { type: "cmd", text: "████╗ ████║██╔════╝██╔══██╗╚██╗ ██╔╝████╗ ████║██║╚██╗ ██╔╝"},
+    { type: "cmd", text: "██╔████╔██║█████╗__███████║ ╚████╔╝ ██╔████╔██║██║ ╚████╔╝ "},
+    { type: "cmd", text: "██║╚██╔╝██║██╔══╝__██╔══██║__╚██╔╝__██║╚██╔╝██║██║__╚██╔╝  "},
+    { type: "cmd", text: "██║ ╚═╝ ██║███████╗██║__██║___██║___██║ ╚═╝ ██║██║___██║   "},
+    { type: "cmd", text: "╚═╝-----╚═╝╚══════╝╚═╝---╚═╝--╚═╝---╚═╝-----╚═╝╚═╝---╚═╝  "},
+    { type: "cmd", text: "cat meaymiy/contacts.json" },
+    { type: "cmd", text: "[contact] @mobile/0930XXXXXXX" },
+    { type: "cmd", text: "[contact] @email/tears@protonmail.com" },
+    { type: "cmd", text: "[contact] @Social/facebook/com/meaymiy" },
+    { type: "cmd", text: "[contact] @messenger/m.me/meaymiy" },
+    { type: "cmd", text: "cat meaymiy/xp.json" },
+    { type: "title", text: "[work-experience.job-order] April 2026 @Commonwealth Bank" },
+    { type: "desc", text: "-Completed a job task focused on backend and frontend development for Commonwealth Bank's Software Engineering team." },
+    { type: "desc", text: "-Extended the backend using C# to enable icons, gaining proficiency in .NET, MongoDB, Postman, and Git." },
+    { type: "desc", text: "-Modified an existing React/Redux frontend to enable icons, expanding expertise in React, Redux, TypeScript, NPM, and Git."},
+    { type: "desc", text: "-Strengthened coding skills and learned unit testing with C#, xUnit, and .NET, ensuring comprehensive code coverage and support for icons."},
+    { type: "desc", text: "-Improved Git and Github skills, emphasizing effective communication through the submission of changes for team review."},  
+    { type: "title", text: "[work-experience.job-order] April 2026 @Wells Fargo Software Engineering" },
+    { type: "desc", text: "-Understood relevant requirements for building a system to manage financial portfolios"},
+    { type: "desc", text: "-Figured out what data the system needed to keep track of"},
+    { type: "desc", text: "-Drafted a visual representation of the data as an entity relationship diagram (ERD)"},
+    { type: "desc", text: "-Used the IntelliJ developer application to implementwork-experience the ERD and published it to GitHub"}, 
+
+
+    { type: "title", text: "[work-experience.job-order] April 2026 @Clifford Chance Cyber Security" },
+    { type: "desc", text: ""}, 
+
   ];
 
   return (
@@ -118,14 +142,18 @@ export default function PortfolioApp() {
   className="custom-class"
 >Marc Yim
 </GradientText></p>
-                <span className="tracking-[0.25em] text-white uppercase">portfolio.runtime</span>
+                <span className="tracking-[0.25em] text-white uppercase">portfolio.cli</span>
               </div>
 
               
               <div className="mt-10 text-left max-w-3xl">
                 
-                <h1 className="text-4xl font-semibold leading-tight md:text-6xl">
-Cybersecurity +
+                <h1 className="text-4xl font-semibold leading-tight md:text-6xl"><FuzzyText 
+  baseIntensity={0.2}
+  hoverIntensity={0.5}
+  enableHover
+>Cybersecurity </FuzzyText>
+<p className="pl-[30%]">           +</p>
                   <span className="block bg-gradient-to-r from-fuchsia-400 via-pink-400 to-violet-300 bg-clip-text text-transparent">
                     Full-Stack Portfolio
                   </span>
@@ -138,6 +166,7 @@ Cybersecurity +
   className="custom-class"
 >{profile.summary} I design learning experiences, build software, and help teams improve security awareness, delivery, and technical capability.
                 </GradientText></p>
+                <div className="flex">
                 <div className="mt-4 w-1/2">
                     <div className="text-xs  uppercase tracking-[0.25em] text-fuchsia-300">Current Focus</div>
                     <div className="mt-2 text-2xl font-semibold"><RotatingText
@@ -154,9 +183,11 @@ Cybersecurity +
   splitBy="characters"
   auto
   loop
-/><div className="rounded-full text-center border border-cyan-400/30 px-4 py-2 text-sm text-cyan-300">Available for opportunities</div>
+/>
+</div></div>
+<div className="rounded-full w-1/2 m-10 h-1/2 text-center border border-cyan-400/30 px-4 py-2 text-sm text-cyan-300">Available for opportunities</div>
 </div>
-                  </div>
+                  
               </div>
 
               <div className="mt-10 grid gap-4 md:grid-cols-2">
@@ -172,37 +203,40 @@ Cybersecurity +
               
             </div>
 
-            <div className="border-t border-white/10 p-6 md:p-10">
-              <div className="grid gap-4 md:grid-cols-2">
-                {profile.contact.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    target={item.href.startsWith('http') ? '_blank' : undefined}
-                    rel={item.href.startsWith('http') ? 'noreferrer' : undefined}
-                    className="group rounded-2xl border border-white/10 bg-white/5 p-4 transition hover:border-cyan-400/40 hover:bg-white/10"
-                  >
-                    <div className="text-xs uppercase tracking-[0.25em] text-white/45">{item.label}</div>
-                    <div className="mt-2 text-sm text-cyan-300 group-hover:text-fuchsia-300">{item.value}</div>
-                  </a>
-                ))}
-              </div>
-            </div>
+            
             <div className=" bg-black/50 p-5 shadow-[0_0_40px_rgba(34,211,238,0.08)]">
+             
+  
+
                 <div className="mb-4 flex flex-wrap items-center gap-2 text-xs text-fuchsia-300">
-                  <span className="rounded-full border border-fuchsia-400/30 px-3 py-1">gulp</span>
-                  <span className="rounded-full border border-white/10 px-3 py-1 text-white/70">cmd</span>
+                  <span className="rounded-full border border-fuchsia-400/30 px-3 py-1">cmd</span>
+                  <span className="rounded-full border border-white/10 px-3 py-1 text-white/70">git</span>
                   <span className="rounded-full border border-white/10 px-3 py-1 text-white/70">PowerShell</span>
                   <span className="rounded-full border border-white/10 px-3 py-1 text-white/70">terminal</span>
                 </div>
+
+                
                 <div className="space-y-1 text-left font-mono text-sm md:text-base">
-                  {terminalLines.map((line) => (
-                    <div key={line} className="text-cyan-300">
-                      {line}
+                   <GradientText
+colors={["#5227FF","#FF9FFC","#EAB308","#3B82F6","#06B6D4","#F97316"]}
+  animationSpeed={8}
+  showBorder={false}
+  className="custom-class"
+  direction='diagonal'
+>
+                  {terminalLines.map((line,i) => (
+                    <div key={i} className={` ${
+      line.type === "title" ? " font-black italic" : ""
+    } ${line.type === "desc" ? "pl-6 text-sm" : ""}`}
+  >
+    {line.text}
+                      
                     </div>
                   ))}
+                  </GradientText>
                   <div className="mt-2 text-fuchsia-300">Application Available At: /portfolio/marc-yim</div>
                 </div>
+                
               </div>
           </section>
 
