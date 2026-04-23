@@ -7,9 +7,23 @@ export default function PortfolioApp() {
     const year = new Date().getFullYear();
     const currentTime = new Date().toLocaleTimeString();
     const timeCLI = new Date().toISOString();
-    
+    const Key = ({ children }) => (
+  <span className="
+    px-3 py-1.5
+    rounded-md
+    border border-cyan-400/40
+    bg-black/40
+    text-cyan-300
+    font-mono text-sm
+    shadow-[0_0_10px_rgba(34,211,238,0.6)]
+    hover:shadow-[0_0_18px_rgba(236,72,153,0.8)]
+    transition
+  ">
+    {children}
+  </span>
+);
     const profile = {
-    name: "Marc Yim",
+    name: "MarcYim",
     role: "Technical Skills Trainer • Cybersecurity • Full-Stack Development • Software Engineering",
     summary:
       "Technical Skills Trainer with 12+ years of experience across cybersecurity, full-stack web development, and software engineering.",
@@ -192,10 +206,10 @@ export default function PortfolioApp() {
         { type: "title", text: "[work-experience] (October 2022 – December 2025) SLTCFI-PASIG CITY" },
     { type: "desc", text: "TESDA Trainer (Programming JAVA NC III), LMS Administrator and Course Content Designer"},
 
-        { type: "title", text: "[work-experience](July 2016 – December 14, 2021)  SLTCFI-PASIG CITY" },
+        { type: "title", text: "[work-experience] (July 2016 – December 14, 2021)  SLTCFI-PASIG CITY" },
     { type: "desc", text: "TESDA Trainer (Web Dev), Web Developer, LMS Administrator and Course Content Designer"},
 
-        { type: "title", text: "[work-experience](January 2018 – January 2020)  RVN Tech-Voc Inc., MALABON" },
+        { type: "title", text: "[work-experience] (January 2018 – January 2020)  RVN Tech-Voc Inc., MALABON" },
     { type: "desc", text: "TESDA Trainer (Web Development and Creative Web Design)"},
 
         { type: "title", text: "[work-experience] (Oct 2016 – June 2019)  Villalon TECHNICAL SOLUTIONS Consultancy" },
@@ -210,6 +224,8 @@ export default function PortfolioApp() {
 
 
   ];
+
+  
 
   return (
     <div className="min-h-screen bg-[#05060a] text-white overflow-hidden">
@@ -228,9 +244,9 @@ export default function PortfolioApp() {
   animationSpeed={8}
   showBorder={false}
   className="custom-class"
-><p className="mb-3 text-sm uppercase tracking-[0.35em]  text-fuchsia-300">Marc Yim</p>
+><p className="mb-3 text-sm uppercase tracking-[0.35em]  text-fuchsia-300">MarcYim</p>
 </GradientText>
-                <span className="tracking-[0.25em] text-white uppercase">portfolio.cli</span>
+                <span className="tracking-[0.25em] text-white uppercase">_portfolio.cli</span>
               </div>
 
               
@@ -254,6 +270,12 @@ export default function PortfolioApp() {
   className="custom-class"
 >{profile.summary} I design learning experiences, build software, and help teams improve security awareness, delivery, and technical capability.
                 </GradientText>
+                DO NOT VIEW CONSOLE OR PRESS
+                <div className="flex items-center gap-2">
+  <Key>Ctrl</Key>
+  <Key>Shift</Key>
+  <Key>J</Key>
+</div>
                 <div className="flex">
                 <div className="mt-4 w-1/2">
                     <div className="text-xs  uppercase tracking-[0.25em] text-fuchsia-300">Current Focus</div>
@@ -273,7 +295,11 @@ export default function PortfolioApp() {
   loop
 />
 </div></div>
-
+{/* <div class="rounded-full w-1/2 m-10 h-1/2 text-center border border-cyan-400/30 px-4 py-2 text-sm text-cyan-300">DO NOT VIEW THE CONSOLE <div className="flex items-center gap-2">
+  <Key>Ctrl</Key>
+  <Key>Shift</Key>
+  <Key>J</Key>
+</div></div> */}
 </div>
                   
               </div>
@@ -457,31 +483,102 @@ colors={ line.type === "title" ? ["#06B6D4","#16ff01","#F43F5E","#3B82F6"]:
     </div>
     
   );
+  
 }
-console.clear();
 
-console.log(
-  "%c Marc Yim ",
-  "background: linear-gradient(90deg,#22d3ee,#ec4899); color:black; font-size:20px; padding:6px 12px; border-radius:6px;"
-);
+  console.clear();
 
-const lines = [
-  "[boot] portfolio initializing...",
-  "[react] UI mounted",
-  "[security] modules active",
-  "[status] system stable",
-];
-
-lines.forEach((line, i) => {
-  setTimeout(() => {
-    console.log(`%c${line}`, "color:#22d3ee;font-family:monospace;");
-  }, i * 250);
-});
-
-setTimeout(() => {
+  // 🔥 Banner
   console.log(
-    "%c🚀 Welcome, developer.",
-    "color:#ec4899;font-weight:bold;font-size:14px;"
+    "%c MarcYim ",
+    "background: linear-gradient(90deg,#22d3ee,#ec4899); color:black; font-size:22px; padding:6px 14px; border-radius:8px; font-weight:bold;"
   );
-  console.log("%c📧 tears@protonmail.com", "color:#a855f7;");
-}, 1200);
+
+  console.log(
+    "%c Technical Skills Trainer • Cybersecurity • Full-Stack Dev ",
+    "color:#22d3ee; font-size:13px;"
+  );
+
+
+  const lines = [
+    { text: "[boot] initializing marc-yim portfolio...", style: "color:#22d3ee" },
+    { text: "[react] mounting UI...", style: "color:#4ade80" },
+    { text: "[security] loading modules...", style: "color:#facc15" },
+    { text: "[xp] loading experience data...", style: "color:#38bdf8" },
+    { text: "[skills] React • Node • Java • Cybersecurity", style: "color:#a855f7" },
+    { text: "[status] system stable ✔", style: "color:#4ade80" },
+
+  
+
+     { text: "███╗___███╗███████╗ █████╗ ██╗___██╗███╗___███╗██╗██╗___██╗", style: "color:#06B6D4" },
+     { text: "████╗ ████║██╔════╝██╔══██╗╚██╗ ██╔╝████╗ ████║██║╚██╗ ██╔╝", style: "color:#06B6D4" },
+     { text: "██╔████╔██║█████╗__███████║ ╚████╔╝ ██╔████╔██║██║ ╚████╔╝ ", style: "color:#06B6D4" },
+     { text: "██║╚██╔╝██║██╔══╝__██╔══██║__╚██╔╝__██║╚██╔╝██║██║__╚██╔╝  ", style: "color:#06B6D4" },
+     { text: "██║ ╚═╝ ██║███████╗██║__██║___██║___██║ ╚═╝ ██║██║___██║   ", style: "color:#06B6D4" },
+     { text: "╚═╝-----╚═╝╚══════╝╚═╝---╚═╝--╚═╝---╚═╝-----╚═╝╚═╝---╚═╝  ", style: "color:#06B6D4" },
+     ];
+
+  lines.forEach((line) => {
+    
+      console.log(`%c${line.text}`, `${line.style}; font-family:monospace;`);
+    });
+
+
+  // 💻 Contacts (from your README)
+  
+    console.log(
+      "%c\n[contact]",
+      "color:#ec4899; font-weight:bold; font-size:14px;"
+    );
+
+    console.log("%c📱 0930XXXXXXX", "color:#22d3ee");
+    console.log("%c📧 tears@protonmail.com", "color:#22d3ee");
+    console.log("%c🌐 facebook.com/meaymiy", "color:#22d3ee");
+
+ 
+
+  // 👀 Hidden dev message
+  
+    console.log(
+      "%c\n👀 Hey developer...",
+      "color:#f472b6; font-size:15px; font-weight:bold;"
+    );
+
+    console.log(
+      "%cIf you're inspecting this, you're my kind of person 😎",
+      "color:#a855f7;"
+    );
+
+    console.log(
+      "%cLet's build something awesome together.",
+      "color:#22d3ee;"
+    );
+
+    // ⚡ Animated terminal logs
+  const lines2 = [
+     { text: "[job orders] initializing job orders...", style: "color:#22d3ee" },
+     { text: "April 2026 @Commonwealth Bank", style: "color:#06B6D4" },
+     { text: "April 2026 @Wells Fargo Software Engineering", style: "color:#06B6D4" },
+     { text: "April 2026 @Clifford Chance Cyber Security", style: "color:#06B6D4" },
+     { text: "March 2026 @PwC Cyber Security Consulting", style: "color:#06B6D4" },
+     { text: "March 2026 @Mastercard Cybersecurity", style: "color:#06B6D4" },
+     { text: "March 2026 @DATACOM Cybersecurity Operations", style: "color:#06B6D4" },
+     { text: "March 2026 @TATA Cybersecurity Analyst", style: "color:#06B6D4" },
+     { text: "March 2026 @Deloitte Cyber", style: "color:#06B6D4" },
+     { text: "March 2026 @Commonwealth Bank Cybersecurity", style: "color:#06B6D4" },
+     { text: "March 2026 @EY Forensic and Integrity Services", style: "color:#06B6D4" },
+     { text: "March 2026 @AIG Shields Up: Cybersecurity", style: "color:#06B6D4" },
+     { text: "March 2026 @DLA PIPER Global Cyber with Data Privacy", style: "color:#06B6D4" },
+     { text: "[job exp] initializing job experiences...", style: "color:#22d3ee" },
+     { text: "(March 2022 – January 2025) Tomcat Networks And Wireless Internet Services", style: "color:#06B6D4" },
+     { text: "(February 2022 – March 2026) RCR Network and Data Solution OPC", style: "color:#06B6D4" },
+     { text: "(December 2018– up to present 2026) CENTER FOR INTERNATIONAL INDUSTRIES COMPETENCE CORP., QUEZON CITY", style: "color:#06B6D4" },
+
+  ];
+
+  lines2.forEach((line2, i) => {
+    setTimeout(() => {
+      console.log(`%c${line2.text}`, `${line2.style}; font-family:monospace;`);
+    }, i * 800);
+  });
+
