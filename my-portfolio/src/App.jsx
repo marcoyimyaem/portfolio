@@ -93,33 +93,121 @@ export default function PortfolioApp() {
 
   const terminalLines = [
     { type: "cmd", text: "["+currentTime+"] Starting 'build'..." },
-    { type: "cmd", text: "███╗___███╗███████╗ █████╗ ██╗___██╗███╗___███╗██╗██╗___██╗"},
-    { type: "cmd", text: "████╗ ████║██╔════╝██╔══██╗╚██╗ ██╔╝████╗ ████║██║╚██╗ ██╔╝"},
-    { type: "cmd", text: "██╔████╔██║█████╗__███████║ ╚████╔╝ ██╔████╔██║██║ ╚████╔╝ "},
-    { type: "cmd", text: "██║╚██╔╝██║██╔══╝__██╔══██║__╚██╔╝__██║╚██╔╝██║██║__╚██╔╝  "},
-    { type: "cmd", text: "██║ ╚═╝ ██║███████╗██║__██║___██║___██║ ╚═╝ ██║██║___██║   "},
-    { type: "cmd", text: "╚═╝-----╚═╝╚══════╝╚═╝---╚═╝--╚═╝---╚═╝-----╚═╝╚═╝---╚═╝  "},
-    { type: "cmd", text: "cat meaymiy/contacts.json" },
+    { type: "title", text: "███╗___███╗███████╗ █████╗ ██╗___██╗███╗___███╗██╗██╗___██╗"},
+    { type: "title", text: "████╗ ████║██╔════╝██╔══██╗╚██╗ ██╔╝████╗ ████║██║╚██╗ ██╔╝"},
+    { type: "title", text: "██╔████╔██║█████╗__███████║ ╚████╔╝ ██╔████╔██║██║ ╚████╔╝ "},
+    { type: "title", text: "██║╚██╔╝██║██╔══╝__██╔══██║__╚██╔╝__██║╚██╔╝██║██║__╚██╔╝  "},
+    { type: "title", text: "██║ ╚═╝ ██║███████╗██║__██║___██║___██║ ╚═╝ ██║██║___██║   "},
+    { type: "title", text: "╚═╝-----╚═╝╚══════╝╚═╝---╚═╝--╚═╝---╚═╝-----╚═╝╚═╝---╚═╝  "},
+    { type: "cmd", text: "["+currentTime+"] cat meaymiy/contacts.json" },
     { type: "cmd", text: "[contact] @mobile/0930XXXXXXX" },
     { type: "cmd", text: "[contact] @email/tears@protonmail.com" },
     { type: "cmd", text: "[contact] @Social/facebook/com/meaymiy" },
     { type: "cmd", text: "[contact] @messenger/m.me/meaymiy" },
-    { type: "cmd", text: "cat meaymiy/xp.json" },
+    { type: "cmd", text: "["+currentTime+"] cat meaymiy/xp-jobOrders.json" },
+    
     { type: "title", text: "[work-experience.job-order] April 2026 @Commonwealth Bank" },
     { type: "desc", text: "-Completed a job task focused on backend and frontend development for Commonwealth Bank's Software Engineering team." },
     { type: "desc", text: "-Extended the backend using C# to enable icons, gaining proficiency in .NET, MongoDB, Postman, and Git." },
     { type: "desc", text: "-Modified an existing React/Redux frontend to enable icons, expanding expertise in React, Redux, TypeScript, NPM, and Git."},
     { type: "desc", text: "-Strengthened coding skills and learned unit testing with C#, xUnit, and .NET, ensuring comprehensive code coverage and support for icons."},
     { type: "desc", text: "-Improved Git and Github skills, emphasizing effective communication through the submission of changes for team review."},  
+    
     { type: "title", text: "[work-experience.job-order] April 2026 @Wells Fargo Software Engineering" },
     { type: "desc", text: "-Understood relevant requirements for building a system to manage financial portfolios"},
     { type: "desc", text: "-Figured out what data the system needed to keep track of"},
     { type: "desc", text: "-Drafted a visual representation of the data as an entity relationship diagram (ERD)"},
     { type: "desc", text: "-Used the IntelliJ developer application to implementwork-experience the ERD and published it to GitHub"}, 
 
-
     { type: "title", text: "[work-experience.job-order] April 2026 @Clifford Chance Cyber Security" },
-    { type: "desc", text: ""}, 
+    { type: "desc", text: "-Completed a job task where I assisted various clients with legal issues relating to cyber breaches."},
+    { type: "desc", text: "-Provided guidance about responding to an ICO Dawn Raid to the managing partner of a rapidly growing online travel company."}, 
+    { type: "desc", text: "-Assisted a major eCommerce business to notify stakeholders about a data breach in accordance with the GDPR."}, 
+    { type: "desc", text: "-Formulated defensive strategies for a client with data center operations to appropriately respond to a data breach."}, 
+
+    { type: "title", text: "[work-experience.job-order] March 2026 @PwC Cyber Security Consulting"},
+    { type: "desc", text: "-Completed a job task focused on a cybersecurity risk assessment for PwC"},
+    { type: "desc", text: "-Determined if controls were missing from a process and identified risks associated with those gaps"},
+    { type: "desc", text: "-Completed a Test of Design and Operating Effectiveness documentation"},
+    { type: "desc", text: "-Created a one-slide summary to present findings"},
+    
+    { type: "title", text: "[work-experience.job-order] March 2026 @Mastercard Cybersecurity" },
+    { type: "desc", text: "-Completed a job task where I served as an analyst on Mastercard’s Security Awareness Team"},
+    { type: "desc", text: "-Helped identify and report security threats such as phishing"},
+    { type: "desc", text: "-Analyzed and identified which areas of the business needed more robust security training and implemented training courses and procedures for those teams"},
+
+    { type: "title", text: "[work-experience.job-order] March 2026 @DATACOM Cybersecurity Operations" },
+    { type: "desc", text: "-Completed a job task focused on how Datacom's cybersecurity team helps protect its clients"},
+    { type: "desc", text: "-Investigated a cyberattack and produced a comprehensive report documenting findings and outlining key recommendations to improve a client's cybersecurity posture"},
+    { type: "desc", text: "-Conducted a comprehensive risk assessment"},
+
+    { type: "title", text: "[work-experience.job-order] March 2026 @TATA Cybersecurity Analyst" },
+    { type: "desc", text: "-Completed a job task involving identity and access management (IAM) for Tata Consultancy Services, collaborating with a Cybersecurity Consulting team."},
+    { type: "desc", text: "-Acquired expertise in IAM principles, cybersecurity best practices, and strategic alignment with business objectives."},
+    { type: "desc", text: "-Delivered comprehensive documentation and presentations, showcasing the ability to communicate complex technical concepts effectively."},
+
+    { type: "title", text: "[work-experience.job-order] March 2026 @Deloitte Cyber" },
+    { type: "desc", text: "-Completed a job task involving reading web activity logs"},
+    { type: "desc", text: "-Supported a client in a cybersecurity breach"},
+    { type: "desc", text: "-Answered questions to identify suspicious user activity"},
+
+    { type: "title", text: "[work-experience.job-order] March 2026 @Commonwealth Bank Cybersecurity" },
+    { type: "desc", text: "-Completed a job task involving the role of a cybersecurity generalist, specializing in fraud detection and prevention for Commonwealth Bank's Cybersecurity team."},
+    { type: "desc", text: "-Developed skills in building data visualization dashboards using Splunk to uncover patterns and insights in historical customer data, aiding in fraud detection."},
+    { type: "desc", text: "-Demonstrated the ability to respond effectively to cybersecurity incidents, including notifying relevant teams, collecting information, containing and stopping attacks, and aiding in recovery efforts."},
+    { type: "desc", text: "-Enhanced security awareness expertise by designing infographics promoting best practices for secure password management, following Australian Cybersecurity Centre advice."},
+    { type: "desc", text: "-Acquired practical experience in penetration testing, assessing the security of web applications, identifying vulnerabilities, and providing recommendations for remediation to bolster cybersecurity defenses."},
+
+    { type: "title", text: "[work-experience.job-order] March 2026 @EY Forensic and Integrity Services" },
+    { type: "desc", text: "-Completed a job task involving a fraud investigation for EY's Forensics team."},
+    { type: "desc", text: "-Analyzed discrepancies in the wealth of the employee under investigation."},
+    { type: "desc", text: "-Examined a sample Purchase Order, Invoice, Credit Note, and Fixed Asset Register, and identified potential risks and issues."},
+
+    { type: "title", text: "[work-experience.job-order] March 2026 @AIG Shields Up: Cybersecurity" },
+    { type: "desc", text: "-Completed a cybersecurity threat analysis for the Cyber Defense Unit, staying updated on CISA publications."},
+    { type: "desc", text: "-Researched and understood reported vulnerabilities, showcasing analytical skills in cybersecurity."},
+    { type: "desc", text: "-Drafted a clear and concise email to guide teams on vulnerability remediation."},
+    { type: "desc", text: "-Utilized Python skills to write a script for ethical hacking, avoiding ransom payments by bruteforcing decryption keys."},
+
+    { type: "title", text: "[work-experience.job-order] March 2026 @DLA PIPER Global Cyber with Data Privacy" },
+    { type: "desc", text: "-Completed a job task involving global data protection and cybersecurity for DLA Piper’s Data Privacy and Cybersecurity team."},
+    { type: "desc", text: "-Analyzed complex data breach scenarios to provide actionable legal advice on GDPR compliance, regulatory notification requirements, and ransom payment risks."},
+    { type: "desc", text: "-Crafted a compliant and strategic media statement to address public relations challenges, emphasizing transparency and minimizing reputational risks."},
+    { type: "desc", text: "-Demonstrated expertise in legal research, regulatory analysis, and professional communication while applying best practices in cybersecurity incident management."},
+
+    { type: "cmd", text: "["+currentTime+"] cat meaymiy/xp.json" },
+
+    { type: "title", text: "[work-experience] (March 2022 – January 2025) Tomcat Networks And Wireless Internet Services" },
+    { type: "desc", text: "Information Security Support Professional"},
+
+    { type: "title", text: "[work-experience] (February 2022 – March 2026) RCR Network and Data Solution OPC" },
+    { type: "desc", text: "Information Security Analyst"},
+
+      { type: "title", text: "[work-experience] (December 2018– up to present 2026) CENTER FOR INTERNATIONAL INDUSTRIES COMPETENCE CORP., QUEZON CITY" },
+    { type: "desc", text: "TESDA Trainer (Programming (JAVA) NC III)"},
+
+        { type: "title", text: "[work-experience] (November 2025– January 2026) SLTCFI-LEGAZPI CITY" },
+    { type: "desc", text: "TESDA Diploma Course Trainer (Programming (.NET) NC III)"},
+
+        { type: "title", text: "[work-experience] (October 2022 – December 2025) SLTCFI-PASIG CITY" },
+    { type: "desc", text: "TESDA Trainer (Programming JAVA NC III), LMS Administrator and Course Content Designer"},
+
+        { type: "title", text: "[work-experience](July 2016 – December 14, 2021)  SLTCFI-PASIG CITY" },
+    { type: "desc", text: "TESDA Trainer (Web Dev), Web Developer, LMS Administrator and Course Content Designer"},
+
+        { type: "title", text: "[work-experience](January 2018 – January 2020)  RVN Tech-Voc Inc., MALABON" },
+    { type: "desc", text: "TESDA Trainer (Web Development and Creative Web Design)"},
+
+        { type: "title", text: "[work-experience] (Oct 2016 – June 2019)  Villalon TECHNICAL SOLUTIONS Consultancy" },
+    { type: "desc", text: "Full Stack Web Developer & UI/UX Designer"},
+            { type: "title", text: "[work-experience] (June 2015 – April 2016)  SLTCFI-PIODURAN" },
+    { type: "desc", text: "IT Instructor"},
+
+        { type: "title", text: "[work-experience] (April 2014 – April 2015)  Unarealidad" },
+    { type: "desc", text: "Junior Tech Developer"},
+    { type: "desc", text: "(Web Developer, Mobile App Developer, UI/UX Graphic Designer)"},
+
+
 
   ];
 
@@ -135,13 +223,13 @@ export default function PortfolioApp() {
             <div className="p-6 md:p-10">
               <div className="mb-6 flex items-center gap-3 text-sm text-cyan-300/90">
                 <div className="h-3 w-3 rounded-full bg-cyan-400 shadow-[0_0_16px_rgba(34,211,238,0.9)]" />
-                <p className="mb-3 text-sm uppercase tracking-[0.35em]  text-fuchsia-300"><GradientText
+                <GradientText
   colors={["#10B981","#3B82F6","#10B981"]}
   animationSpeed={8}
   showBorder={false}
   className="custom-class"
->Marc Yim
-</GradientText></p>
+><p className="mb-3 text-sm uppercase tracking-[0.35em]  text-fuchsia-300">Marc Yim</p>
+</GradientText>
                 <span className="tracking-[0.25em] text-white uppercase">portfolio.cli</span>
               </div>
 
@@ -158,19 +246,19 @@ export default function PortfolioApp() {
                     Full-Stack Portfolio
                   </span>
                 </h1>
-                <p className="mt-5 max-w-2xl text-base leading-7 text-white/75 md:text-lg">
+                
                   <GradientText
   colors={["#10B981","#3B82F6","#10B981"]}
   animationSpeed={2}
   showBorder={false}
   className="custom-class"
 >{profile.summary} I design learning experiences, build software, and help teams improve security awareness, delivery, and technical capability.
-                </GradientText></p>
+                </GradientText>
                 <div className="flex">
                 <div className="mt-4 w-1/2">
                     <div className="text-xs  uppercase tracking-[0.25em] text-fuchsia-300">Current Focus</div>
                     <div className="mt-2 text-2xl font-semibold"><RotatingText
-  texts={['Trainer', 'Security Analyst', 'Developer','Gamer']}
+  texts={['Trainer', 'Security Analyst', 'Developer','Gamer','Available for opportunities']}
   mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
   staggerFrom="last"
   initial={{ y: "100%" }}
@@ -185,7 +273,7 @@ export default function PortfolioApp() {
   loop
 />
 </div></div>
-<div className="rounded-full w-1/2 m-10 h-1/2 text-center border border-cyan-400/30 px-4 py-2 text-sm text-cyan-300">Available for opportunities</div>
+
 </div>
                   
               </div>
@@ -217,24 +305,27 @@ export default function PortfolioApp() {
 
                 
                 <div className="space-y-1 text-left font-mono text-sm md:text-base">
-                   <GradientText
-colors={["#5227FF","#FF9FFC","#EAB308","#3B82F6","#06B6D4","#F97316"]}
-  animationSpeed={8}
-  showBorder={false}
-  className="custom-class"
-  direction='diagonal'
->
+                   
                   {terminalLines.map((line,i) => (
-                    <div key={i} className={` ${
+                    <div  key={i} className={` ${
       line.type === "title" ? " font-black italic" : ""
     } ${line.type === "desc" ? "pl-6 text-sm" : ""}`}
-  >
+  ><GradientText
+colors={ line.type === "title" ? ["#06B6D4","#16ff01","#F43F5E","#3B82F6"]: 
+  line.type==="cmd" ?["#5227FF","#FF9FFC","#6366F1","#3B82F6","#06B6D4","#F97316"]:
+  ["#5227FF","#0003b8","#b8000f","#00ff08"]
+ }
+  animationSpeed={8}
+  showBorder={false}
+ 
+  direction= 'diagonal'
+>
     {line.text}
-                      
+                </GradientText>       
                     </div>
                   ))}
-                  </GradientText>
-                  <div className="mt-2 text-fuchsia-300">Application Available At: /portfolio/marc-yim</div>
+                 
+                  <div className="mt-2 text-fuchsia-300">EOF</div>
                 </div>
                 
               </div>
@@ -367,3 +458,30 @@ colors={["#5227FF","#FF9FFC","#EAB308","#3B82F6","#06B6D4","#F97316"]}
     
   );
 }
+console.clear();
+
+console.log(
+  "%c Marc Yim ",
+  "background: linear-gradient(90deg,#22d3ee,#ec4899); color:black; font-size:20px; padding:6px 12px; border-radius:6px;"
+);
+
+const lines = [
+  "[boot] portfolio initializing...",
+  "[react] UI mounted",
+  "[security] modules active",
+  "[status] system stable",
+];
+
+lines.forEach((line, i) => {
+  setTimeout(() => {
+    console.log(`%c${line}`, "color:#22d3ee;font-family:monospace;");
+  }, i * 250);
+});
+
+setTimeout(() => {
+  console.log(
+    "%c🚀 Welcome, developer.",
+    "color:#ec4899;font-weight:bold;font-size:14px;"
+  );
+  console.log("%c📧 tears@protonmail.com", "color:#a855f7;");
+}, 1200);
