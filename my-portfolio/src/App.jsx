@@ -107,12 +107,12 @@ export default function PortfolioApp() {
 
   const terminalLines = [
     { type: "cmd", text: "["+currentTime+"] Starting 'build'..." },
-    { type: "title", text: "███╗___███╗███████╗ █████╗ ██╗___██╗███╗___███╗██╗██╗___██╗"},
-    { type: "title", text: "████╗ ████║██╔════╝██╔══██╗╚██╗ ██╔╝████╗ ████║██║╚██╗ ██╔╝"},
-    { type: "title", text: "██╔████╔██║█████╗__███████║ ╚████╔╝ ██╔████╔██║██║ ╚████╔╝ "},
-    { type: "title", text: "██║╚██╔╝██║██╔══╝__██╔══██║__╚██╔╝__██║╚██╔╝██║██║__╚██╔╝  "},
-    { type: "title", text: "██║ ╚═╝ ██║███████╗██║__██║___██║___██║ ╚═╝ ██║██║___██║   "},
-    { type: "title", text: "╚═╝-----╚═╝╚══════╝╚═╝---╚═╝--╚═╝---╚═╝-----╚═╝╚═╝---╚═╝  "},
+    { type: "cmd", text: "███╗___███╗███████╗ █████╗ ██╗___██╗███╗___███╗██╗██╗___██╗"},
+    { type: "cmd", text: "████╗ ████║██╔════╝██╔══██╗╚██╗ ██╔╝████╗ ████║██║╚██╗ ██╔╝"},
+    { type: "cmd", text: "██╔████╔██║█████╗__███████║ ╚████╔╝ ██╔████╔██║██║ ╚████╔╝ "},
+    { type: "cmd", text: "██║╚██╔╝██║██╔══╝__██╔══██║__╚██╔╝__██║╚██╔╝██║██║__╚██╔╝  "},
+    { type: "cmd", text: "██║ ╚═╝ ██║███████╗██║__██║___██║___██║ ╚═╝ ██║██║___██║   "},
+    { type: "cmd", text: "╚═╝-----╚═╝╚══════╝╚═╝---╚═╝--╚═╝---╚═╝-----╚═╝╚═╝---╚═╝  "},
     { type: "cmd", text: "["+currentTime+"] cat meaymiy/contacts.json" },
     { type: "cmd", text: "[contact] @mobile/0930XXXXXXX" },
     { type: "cmd", text: "[contact] @email/tears@protonmail.com" },
@@ -259,7 +259,7 @@ export default function PortfolioApp() {
 >Cybersecurity </FuzzyText>
 <p className="pl-[30%]">           +</p>
                   <span className="block bg-gradient-to-r from-fuchsia-400 via-pink-400 to-violet-300 bg-clip-text text-transparent">
-                    Full-Stack Portfolio
+                    Full-Stack Portfolio (preferably backend & infrastructure )
                   </span>
                 </h1>
                 
@@ -330,12 +330,12 @@ export default function PortfolioApp() {
                 </div>
 
                 
-                <div className="space-y-1 text-left font-mono text-sm md:text-base">
+                <div className="space-y-1  text-left font-mono text-sm md:text-base">
                    
                   {terminalLines.map((line,i) => (
                     <div  key={i} className={` ${
-      line.type === "title" ? " font-black italic" : ""
-    } ${line.type === "desc" ? "pl-6 text-sm" : ""}`}
+      line.type === "title" ? " font-black italic vt323-regular" : ""
+    } ${line.type === "desc" ? "pl-6 text-sm vt323-regular" : ""}`}
   ><GradientText
 colors={ line.type === "title" ? ["#06B6D4","#16ff01","#F43F5E","#3B82F6"]: 
   line.type==="cmd" ?["#5227FF","#FF9FFC","#6366F1","#3B82F6","#06B6D4","#F97316"]:
@@ -495,32 +495,32 @@ colors={ line.type === "title" ? ["#06B6D4","#16ff01","#F43F5E","#3B82F6"]:
   );
 
   console.log(
-    "%c Technical Skills Trainer • Cybersecurity • Full-Stack Dev ",
+    "%c Technical Skills Trainer • Cybersecurity • Full-Stack Dev(preferably backend & infrastructure ) ",
     "color:#22d3ee; font-size:13px;"
   );
 
 
   const lines = [
-    { text: "[boot] initializing marc-yim portfolio...", style: "color:#22d3ee" },
-    { text: "[react] mounting UI...", style: "color:#4ade80" },
-    { text: "[security] loading modules...", style: "color:#facc15" },
+    { text: "[boot] initializing marc-yim portfolio...", style: "font-family:VT323;color:#22d3ee" },
+    { text: "[react] mounting UI...", style: "font-family:VT323;color:#4ade80" },
+    { text: "[security] loading modules...", style: "font-family:VT323;color:#facc15" },
     { text: "[xp] loading experience data...", style: "color:#38bdf8" },
-    { text: "[skills] React • Node • Java • Cybersecurity", style: "color:#a855f7" },
-    { text: "[status] system stable ✔", style: "color:#4ade80" },
+    { text: "[skills] React • Node • Java • Cybersecurity", style: "font-family:VT323;color:#a855f7" },
+    { text: "[status] system stable ✔", style: "font-family:VT323;color:#4ade80" },
 
   
 
      { text: "███╗___███╗███████╗ █████╗ ██╗___██╗███╗___███╗██╗██╗___██╗", style: "color:#06B6D4" },
-     { text: "████╗ ████║██╔════╝██╔══██╗╚██╗ ██╔╝████╗ ████║██║╚██╗ ██╔╝", style: "color:#06B6D4" },
-     { text: "██╔████╔██║█████╗__███████║ ╚████╔╝ ██╔████╔██║██║ ╚████╔╝ ", style: "color:#06B6D4" },
-     { text: "██║╚██╔╝██║██╔══╝__██╔══██║__╚██╔╝__██║╚██╔╝██║██║__╚██╔╝  ", style: "color:#06B6D4" },
-     { text: "██║ ╚═╝ ██║███████╗██║__██║___██║___██║ ╚═╝ ██║██║___██║   ", style: "color:#06B6D4" },
-     { text: "╚═╝-----╚═╝╚══════╝╚═╝---╚═╝--╚═╝---╚═╝-----╚═╝╚═╝---╚═╝  ", style: "color:#06B6D4" },
+     { text: "████╗ ████║██╔════╝██╔══██╗╚██╗ ██╔╝████╗ ████║██║╚██╗ ██╔╝", style: "color:#6366F1" },
+     { text: "██╔████╔██║█████╗__███████║ ╚████╔╝ ██╔████╔██║██║ ╚████╔╝ ", style: "color:#3B82F6" },
+     { text: "██║╚██╔╝██║██╔══╝__██╔══██║__╚██╔╝__██║╚██╔╝██║██║__╚██╔╝  ", style: "color:#5227FF" },
+     { text: "██║ ╚═╝ ██║███████╗██║__██║___██║___██║ ╚═╝ ██║██║___██║   ", style: "color:#FF9FFC" },
+     { text: "╚═╝-----╚═╝╚══════╝╚═╝---╚═╝--╚═╝---╚═╝-----╚═╝╚═╝---╚═╝  ", style: "color:#0003b8" },
      ];
 
   lines.forEach((line) => {
     
-      console.log(`%c${line.text}`, `${line.style}; font-family:monospace;`);
+      console.log(`%c${line.text}`, `${line.style}; `);
     });
 
 
@@ -531,9 +531,9 @@ colors={ line.type === "title" ? ["#06B6D4","#16ff01","#F43F5E","#3B82F6"]:
       "color:#ec4899; font-weight:bold; font-size:14px;"
     );
 
-    console.log("%c📱 0930XXXXXXX", "color:#22d3ee");
-    console.log("%c📧 tears@protonmail.com", "color:#22d3ee");
-    console.log("%c🌐 facebook.com/meaymiy", "color:#22d3ee");
+    console.log("%c📱 0930XXXXXXX", "font-family:VT323;color:#22d3ee");
+    console.log("%c📧 tears@protonmail.com", "font-family:VT323;color:#22d3ee");
+    console.log("%c🌐 facebook.com/meaymiy", "font-family:VT323;color:#22d3ee");
 
  
 
@@ -541,44 +541,40 @@ colors={ line.type === "title" ? ["#06B6D4","#16ff01","#F43F5E","#3B82F6"]:
   
     console.log(
       "%c\n👀 Hey developer...",
-      "color:#f472b6; font-size:15px; font-weight:bold;"
+      "color:#f472b6; font-size:15px; font-weight:bold;font-family:VT323;"
     );
 
     console.log(
       "%cIf you're inspecting this, you're my kind of person 😎",
-      "color:#a855f7;"
+      "color:#a855f7;font-family:VT323;"
     );
 
     console.log(
       "%cLet's build something awesome together.",
-      "color:#22d3ee;"
+      "color:#22d3ee;font-family:VT323;"
     );
 
     // ⚡ Animated terminal logs
   const lines2 = [
-     { text: "[job orders] initializing job orders...", style: "color:#22d3ee" },
-     { text: "April 2026 @Commonwealth Bank", style: "color:#06B6D4" },
-     { text: "April 2026 @Wells Fargo Software Engineering", style: "color:#06B6D4" },
-     { text: "April 2026 @Clifford Chance Cyber Security", style: "color:#06B6D4" },
-     { text: "March 2026 @PwC Cyber Security Consulting", style: "color:#06B6D4" },
-     { text: "March 2026 @Mastercard Cybersecurity", style: "color:#06B6D4" },
-     { text: "March 2026 @DATACOM Cybersecurity Operations", style: "color:#06B6D4" },
-     { text: "March 2026 @TATA Cybersecurity Analyst", style: "color:#06B6D4" },
-     { text: "March 2026 @Deloitte Cyber", style: "color:#06B6D4" },
-     { text: "March 2026 @Commonwealth Bank Cybersecurity", style: "color:#06B6D4" },
-     { text: "March 2026 @EY Forensic and Integrity Services", style: "color:#06B6D4" },
-     { text: "March 2026 @AIG Shields Up: Cybersecurity", style: "color:#06B6D4" },
-     { text: "March 2026 @DLA PIPER Global Cyber with Data Privacy", style: "color:#06B6D4" },
-     { text: "[job exp] initializing job experiences...", style: "color:#22d3ee" },
-     { text: "(March 2022 – January 2025) Tomcat Networks And Wireless Internet Services", style: "color:#06B6D4" },
-     { text: "(February 2022 – March 2026) RCR Network and Data Solution OPC", style: "color:#06B6D4" },
-     { text: "(December 2018– up to present 2026) CENTER FOR INTERNATIONAL INDUSTRIES COMPETENCE CORP., QUEZON CITY", style: "color:#06B6D4" },
+     { text: "[job orders] initializing job orders...", style: "font-family:VT323;color:#22d3ee" },
+     { text: "April 2026 @Commonwealth Bank, @Wells Fargo Software Engineering, and @Clifford Chance Cyber Security", style: "font-family:VT323;color:#06B6D4" },
+     { text: "March 2026 @PwC Cyber Security Consulting", style: "font-family:VT323;color:#06B6D4" },
+     { text: "March 2026 @Mastercard, @Commonwealth Bank, @AIG Shields Up:  - Cybersecurity ", style: "font-family:VT323;color:#06B6D4" },
+     { text: "March 2026 @DATACOM Cybersecurity Operations", style: "font-family:VT323;color:#06B6D4" },
+     { text: "March 2026 @TATA Cybersecurity Analyst", style: "font-family:VT323;color:#06B6D4" },
+     { text: "March 2026 @Deloitte Cyber", style: "font-family:VT323;color:#06B6D4" },
+     { text: "March 2026 @EY Forensic and Integrity Services", style: "font-family:VT323;color:#06B6D4" },
+     { text: "March 2026 @DLA PIPER Global Cyber with Data Privacy", style: "font-family:VT323;color:#06B6D4" },
+     { text: "[job exp] initializing job experiences...", style: "font-family:VT323;color:#22d3ee" },
+     { text: "(March 2022 – January 2025) Tomcat Networks And Wireless Internet Services", style: "font-family:VT323;color:#06B6D4" },
+     { text: "(February 2022 – March 2026) RCR Network and Data Solution OPC", style: "font-family:VT323;color:#06B6D4" },
+     { text: "(December 2018– up to present 2026) CENTER FOR INTERNATIONAL INDUSTRIES COMPETENCE CORP., QUEZON CITY", style: "font-family:VT323;color:#06B6D4" },
 
   ];
 
   lines2.forEach((line2, i) => {
     setTimeout(() => {
-      console.log(`%c${line2.text}`, `${line2.style}; font-family:monospace;`);
+      console.log(`%c${line2.text}`, `${line2.style}; font-family:VT323;`);
     }, i * 800);
   });
 
