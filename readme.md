@@ -30,20 +30,21 @@
 ```
 
 # Marco L. Yimyaem
-**Full-Stack Developer, Cybersecurity Analyst, & Senior IT Instructor**  
+**Full-Stack Developer, Cybersecurity Analyst, & IT Skills Instructor**  
 *Specialization: Backend Infrastructure, Enterprise Security, & Technical Training*
 
 ---
 
 ## 🚀 Executive Summary
-Marco L. Yimyaem is a highly versatile IT professional and educator with over 12 years of experience bridging tech education, full-stack development, and enterprise security in the Philippines. Registered under the Technical Education and Skills Development Authority (TESDA), he serves as a certified Regional Lead Trainer, Oracle Certified Associate (OCA), and experienced Information Security Analyst. His career uniquely spans training hundreds of developers in core programming competencies while actively engineering software solutions (.NET, Java, Node.js) and deploying robust cybersecurity risk analysis, incident response, and identity management frameworks across corporate environments.
+Marco L. Yimyaem is a highly versatile IT professional, educator, and assessment leader with over 12 years of experience bridging tech education, full-stack development, and enterprise security in the Philippines. Registered under the Technical Education and Skills Development Authority (TESDA), he serves as the **TESDA Regional Lead Assessor for Web Development NC III in the National Capital Region (NCR)**, alongside holds as a certified Regional Lead Trainer, Oracle Certified Associate (OCA), and experienced Information Security Analyst. His career uniquely spans directing high-stakes regional technical assessments and training hundreds of developers in core programming competencies, while actively engineering software solutions (.NET, Java, Node.js) and deploying robust cybersecurity risk analysis, incident response, and identity management frameworks across corporate environments.
 
 ---
 
 ## 🏅 Certifications & Professional Licenses
+* **Regional Lead Assessor** – Web Development NC III (TESDA - National Capital Region)
+* **Regional Lead Trainer** – Web Development NC III (TESDA)
 * **Java SE 8 Programmer I (OCA)** – Oracle Certified Associate
 * **Programming (Java) NC III** – TESDA Certified
-* **Regional Lead Trainer** – Web Development NC III (TESDA)
 * **Computer Systems Servicing NC II** – TESDA Certified
 * **Visual Graphic Design NC III** – TESDA Certified
 * **Moodle Admin Basics** – MOOC Certification
@@ -51,7 +52,7 @@ Marco L. Yimyaem is a highly versatile IT professional and educator with over 12
 ---
 
 ## 🛠️ Technical Skills
-* **Languages & Frameworks:** Java, C# (.NET), React, Redux, Node.js, Laravel, Vue, TypeScript, Python, HTML, CSS
+* **Languages & Frameworks:** Java, C# (.NET), React, Redux, Node.js, Laravel, Vue, TypeScript, Python(Django, Flask)
 * **Security & Infrastructure:** Incident Response, Identity & Access Management (IAM), Forensic Fraud Investigation, Penetration Testing, Risk Assessment (GDPR/Compliance), Network Security
 * **Tools & Ecosystems:** Splunk, MongoDB, Postman, IntelliJ, Git/GitHub, xUnit, Moodle LMS
 
@@ -59,7 +60,10 @@ Marco L. Yimyaem is a highly versatile IT professional and educator with over 12
 
 ## 💼 Professional Experience
 
-### Technical Training, LMS Administration, & Educational Leadership
+### Technical Training, Evaluation, & Educational Leadership
+
+* **TESDA Regional Lead Assessor (Web Development NC III)** | TESDA National Capital Region (NCR)  
+  *Evaluates and certifies candidates across the capital region for advanced web engineering, backend logic, and framework implementation competencies to validate industry-readiness.*
 
 * **TESDA Trainer (Programming Java NC III)** | Center for International Industries Competence Corp., Quezon City  
   *December 2018 – Present*
@@ -108,3 +112,4 @@ Marco L. Yimyaem is a highly versatile IT professional and educator with over 12
 * **Junior Tech Developer** | Unarealidad  
   *April 2014 – April 2015*
   * Gained early foundational software industry exposure split between responsive web building, cross-platform mobile application programming, and creative UI/UX graphic layouts.
+
